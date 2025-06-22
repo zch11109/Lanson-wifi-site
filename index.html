@@ -73,6 +73,12 @@
       margin-top: 0.5rem;
       color: var(--text-color);
     }
+
+    .experimental {
+      font-size: 0.85rem;
+      color: #999;
+      margin-top: 0.5rem;
+    }
   </style>
 </head>
 <body>
@@ -83,11 +89,16 @@
     <a class="button" href="/LansonFamilyGuest.mobileconfig">Download for Apple Devices (iPhone, iPad, Mac)</a>
 
     <div class="small">
-      <p><strong>Android users:</strong> Tap below to open Wi-Fi settings and manually join:</p>
+      <p><strong>Android users:</strong></p>
+      <p>1. Tap the button below to <strong>open Wi-Fi settings</strong></p>
+      <p>2. Manually join the Wi-Fi network:</p>
       <p><strong>SSID:</strong> Lanson Family Guest<br>
-      <strong>Password:</strong> iamalansonfamilyguest1</p>
+         <strong>Password:</strong> iamalansonfamilyguest1</p>
     </div>
     <a class="button" href="intent://wifi#Intent;scheme=android.settings;action=android.settings.WIFI_SETTINGS;end">Open Wi-Fi Settings on Android</a>
+    
+    <a class="button" href="WIFI:S:Lanson Family Guest;T:WPA;P:iamalansonfamilyguest1;;">Try Join via Wi-Fi Link (Experimental)</a>
+    <p class="experimental">⚠️ This link may not work on all devices or browsers.</p>
   </div>
 
   <div class="card">
