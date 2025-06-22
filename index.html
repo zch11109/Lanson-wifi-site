@@ -54,7 +54,6 @@
       font-weight: bold;
       border-radius: 8px;
       font-size: 1rem;
-      margin-right: 0.5rem;
     }
 
     ol {
@@ -63,66 +62,4 @@
 
     img {
       max-width: 100%;
-      border-radius: 12px;
-      margin-top: 1rem;
-      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-    }
-
-    .small {
-      font-size: 0.95rem;
-      margin-top: 0.5rem;
-      color: var(--text-color);
-    }
-
-    .experimental {
-      font-size: 0.85rem;
-      color: #999;
-      margin-top: 0.5rem;
-    }
-  </style>
-</head>
-<body>
-
-  <div class="card" style="text-align:center;">
-    <h1>Connect to Lanson Family Guest Wi-Fi</h1>
-    <p>Choose your device type:</p>
-    <a class="button" href="/LansonFamilyGuest.mobileconfig">Download for Apple Devices (iPhone, iPad, Mac)</a>
-
-    <div class="small">
-      <p><strong>Android users:</strong></p>
-      <p>1. Tap the button below to <strong>open Wi-Fi settings</strong></p>
-      <p>2. Manually join the Wi-Fi network:</p>
-      <p><strong>SSID:</strong> Lanson Family Guest<br>
-         <strong>Password:</strong> iamalansonfamilyguest1</p>
-    </div>
-    <a class="button" href="intent://wifi#Intent;scheme=android.settings;action=android.settings.WIFI_SETTINGS;end">Open Wi-Fi Settings on Android</a>
-    
-    <a class="button" href="WIFI:S:Lanson Family Guest;T:WPA;P:iamalansonfamilyguest1;;">Try Join via Wi-Fi Link (Experimental)</a>
-    <p class="experimental">⚠️ This link may not work on all devices or browsers.</p>
-  </div>
-
-  <div class="card">
-    <h2>How to Activate the Wi-Fi Profile on iPhone</h2>
-    <ol>
-      <li>Open the <strong>Settings</strong> app on your iPhone.</li>
-      <img src="https://i.imgur.com/GHxHRsp.png" alt="Settings app icon" />
-
-      <li>At the top of Settings, tap <strong>Profile Downloaded</strong>.</li>
-      <img src="https://i.imgur.com/wgHE9Ab.png" alt="Profile Downloaded notification banner" />
-
-      <li>Tap <strong>Install</strong> in the top right corner.</li>
-      <img src="https://i.imgur.com/nH2eKFb.png" alt="Install button in profile installation screen" />
-
-      <li>Enter your device passcode if prompted.</li>
-      <img src="https://i.imgur.com/F9TMikI.png" alt="Device passcode entry screen" />
-
-      <li>Tap <strong>Install</strong> again to confirm.</li>
-      <img src="https://i.imgur.com/boFTUAW.png" alt="Confirm install screen" />
-
-      <li>Once installed, your device will automatically connect to the Wi-Fi network.</li>
-      <img src="https://i.imgur.com/SnfLMo2.png" alt="Wi-Fi connected to Lanson Family Guest" />
-    </ol>
-  </div>
-
-</body>
-</html>
+      border-radius: 12
