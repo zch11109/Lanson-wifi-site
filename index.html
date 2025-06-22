@@ -5,44 +5,61 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Connect to Lanson Family Guest Wi-Fi</title>
   <style>
+    :root {
+      --brand-color: #34C759;
+      --bg-color: #f9f9f9;
+      --text-color: #333;
+      --card-bg: #fff;
+    }
+
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --bg-color: #121212;
+        --text-color: #eee;
+        --card-bg: #1e1e1e;
+      }
+    }
+
     body {
       font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
-      background: #f9f9f9;
+      background: var(--bg-color);
+      color: var(--text-color);
       margin: 0;
       padding: 1rem;
       max-width: 600px;
       margin-left: auto;
       margin-right: auto;
-      color: #333;
     }
+
     .card {
-      background: white;
+      background: var(--card-bg);
       border-radius: 16px;
       padding: 2rem;
       box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
       margin-bottom: 2rem;
     }
+
     h1, h2 {
-      color: #007aff;
+      color: var(--brand-color);
       margin-top: 0;
     }
+
     .button {
       display: inline-block;
       margin-top: 1rem;
       padding: 0.75rem 1.5rem;
-      background-color: #007aff;
+      background-color: var(--brand-color);
       color: white;
       text-decoration: none;
       font-weight: bold;
       border-radius: 8px;
       font-size: 1rem;
     }
-    p {
-      line-height: 1.5;
-    }
+
     ol {
       padding-left: 1.2rem;
     }
+
     img {
       max-width: 100%;
       border-radius: 12px;
@@ -57,29 +74,26 @@
     <h1>Connect to Lanson Family Guest Wi-Fi</h1>
     <p>Tap below to download the Wi-Fi profile:</p>
     <a class="button" href="/LansonFamilyGuest.mobileconfig">Download Profile</a>
-    <p style="margin-top: 1rem; font-size: 0.9rem; color: #666;">
-      After downloading, go to <strong>Settings → Profile Downloaded</strong> to install the profile.
-    </p>
   </div>
 
   <div class="card">
-    <h2>How to Install the Profile on iPhone</h2>
+    <h2>How to Activate the Wi-Fi Profile on iPhone</h2>
     <ol>
       <li>Open the <strong>Settings</strong> app on your iPhone.</li>
       <img src="https://i.imgur.com/GHxHRsp.png" alt="Settings app icon" />
-      
+
       <li>At the top of Settings, tap <strong>Profile Downloaded</strong>.</li>
       <img src="https://i.imgur.com/wgHE9Ab.png" alt="Profile Downloaded notification banner" />
-      
+
       <li>Tap <strong>Install</strong> in the top right corner.</li>
       <img src="https://i.imgur.com/nH2eKFb.png" alt="Install button in profile installation screen" />
-      
+
       <li>Enter your device passcode if prompted.</li>
       <img src="https://i.imgur.com/F9TMikI.png" alt="Device passcode entry screen" />
-      
+
       <li>Tap <strong>Install</strong> again to confirm.</li>
       <img src="https://i.imgur.com/boFTUAW.png" alt="Confirm install screen" />
-      
+
       <li>Once installed, your device will automatically connect to the Wi-Fi network.</li>
       <img src="https://i.imgur.com/SnfLMo2.png" alt="Wi-Fi connected to Lanson Family Guest" />
     </ol>
