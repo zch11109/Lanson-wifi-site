@@ -114,7 +114,9 @@
     }
 
     #countdown {
-      display: none;
+      font-weight: bold;
+      font-size: 1.2rem;
+      margin-top: 1rem;
     }
   </style>
 </head>
@@ -153,9 +155,8 @@
   <div id="popupOverlay">
     <div id="popupBox">
       <h3>I understand that I have to read the instructions to make sure the Wi-Fi works.</h3>
-      <p>Please wait before the download starts.</p>
-      <button id="confirmBtn" disabled>I understand</button>
-      <span id="countdown">7</span>
+      <button id="confirmBtn" style="display:none;">I understand</button>
+      <div id="countdown">7</div>
     </div>
   </div>
 
@@ -170,20 +171,23 @@
 
     downloadBtn.addEventListener('click', () => {
       popupOverlay.style.display = 'flex';
-      confirmBtn.disabled = true;
+      confirmBtn.style.display = 'none';
       countdown = 7;
+      countdownEl.textContent = countdown;
+      countdownEl.style.display = 'block';
       timer = setInterval(() => {
         countdown--;
+        countdownEl.textContent = countdown;
         if (countdown <= 0) {
           clearInterval(timer);
-          confirmBtn.disabled = false;
+          confirmBtn.style.display = 'inline-block';
+          countdownEl.style.display = 'none';
         }
       }, 1000);
     });
 
     confirmBtn.addEventListener('click', () => {
       popupOverlay.style.display = 'none';
-      // Start file download
       const link = document.createElement('a');
       link.href = '/LansonFamilyGuest.mobileconfig';
       link.download = 'LansonFamilyGuest.mobileconfig';
